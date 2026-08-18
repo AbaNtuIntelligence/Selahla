@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Inter:wght@300;400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-primary text-light font-body;
+}
+
+/* Gradient background for decorative elements (underlines, buttons) */
+.gold-gradient {
+  background: linear-gradient(135deg, #d4af37 0%, #f6e27a 50%, #d4af37 100%);
+}
+
+/* Gradient text – works on all browsers */
+.gold-text {
+  background: linear-gradient(135deg, #d4af37 0%, #f6e27a 50%, #d4af37 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent; /* fallback for older browsers */
+}
+.section-padding {
+  @apply py-20 px-4 md:px-8 lg:px-16 xl:px-24;
+}
+.group:hover .group-hover\:shadow-accent\/20 {
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+}
+/* Gold gradient (for decorative elements and text) */
+.gold-gradient {
+  background: linear-gradient(135deg, #d4af37 0%, #f6e27a 50%, #d4af37 100%);
+}
+
+.gold-text {
+  background: linear-gradient(135deg, #d4af37 0%, #f6e27a 50%, #d4af37 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Indigo → Gold gradient for the company name */
+.indigo-text {
+  background: linear-gradient(135deg, #312e81 0%, #d4af37 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px -15px rgba(212, 175, 55, 0.2);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-secondary;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-accent rounded-full;
+}
