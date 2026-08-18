@@ -2,11 +2,11 @@
   "name": "selahla-website",
   "version": "1.0.0",
   "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
+ "scripts": {
+  "dev": "next dev",
+  "build": "next build && next export",
+  "start": "next start"
+},
   "dependencies": {
     "aos": "^2.3.4",
     "framer-motion": "^10.18.0",
