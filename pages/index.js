@@ -3,6 +3,7 @@ import Footer from '../components/Footer'
 import SectionTitle from '../components/SectionTitle'
 import ServiceCard from '../components/ServiceCard'
 import SocialStack from '../components/SocialStack'
+import HeroServices from '../components/HeroServices'
 import {
   FaCrown,
   FaHandshake,
@@ -39,6 +40,7 @@ export default function Home() {
         </div>
 
         <div className="container mx-auto text-center relative z-10">
+        <HeroServices />
           <div className="inline-block px-4 py-1 border border-accent/30 rounded-full text-xs font-medium tracking-widest text-accent uppercase bg-accent/5 backdrop-blur-sm">
             Est. 2021
           </div>
